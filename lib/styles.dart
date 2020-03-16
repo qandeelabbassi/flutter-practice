@@ -2,8 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 abstract class Styles {
+  static const TextStyle appbar_title_dark = TextStyle(
+    color: Color(0xFF616161)
+  );
   static const TextStyle title = TextStyle(
     color: Color.fromRGBO(0, 0, 0, 1),
     fontSize: 25,
