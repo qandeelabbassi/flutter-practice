@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/xylophone_page.dart';
 import 'dice_game_page.dart';
 import 'profile_page.dart';
 
@@ -37,6 +38,15 @@ class Menu extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => DiceGamePage()),
+                        );
+                      }),
+                  RaisedButton(
+                      child: Text('Xylophone'),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => XylophonePage()),
                         );
                       }),
                 ],

@@ -1,3 +1,10 @@
+/*
+ Important Learning Outcomes
+ 1) Stateful Widgets
+ 2) Perform actions on button click
+ 3) Generate random numbers
+ */
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 

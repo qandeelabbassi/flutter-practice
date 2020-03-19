@@ -1,3 +1,12 @@
+/*
+ Important Learning Outcomes
+ 1) Widgets: SafeArea, Scaffold, Containers, Column, Row, Expanded, SizedBox
+ 2) Aligning widgets
+ 3) Text styling i.e custom font, size, color
+ 4) Loading images
+ */
+
+
 import 'package:flutter/material.dart';
 import 'styles.dart';
 
