@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/xylophone_page.dart';
-import 'dice_game_page.dart';
-import 'profile_page.dart';
+import 'package:flutter_practice/quiz/quiz_page.dart';
+import 'package:flutter_practice/xylophone/xylophone_page.dart';
+import 'dice/dice_game_page.dart';
+import 'profile/profile_page.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -47,6 +48,15 @@ class Menu extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => XylophonePage()),
+                        );
+                      }),
+                  RaisedButton(
+                      child: Text('Quiz'),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => QuizPage()),
                         );
                       }),
                 ],
