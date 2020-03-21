@@ -1,4 +1,4 @@
-package com.exampleui.flutter_practice
+package com.qandeelabbassi.fluttertutorial
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

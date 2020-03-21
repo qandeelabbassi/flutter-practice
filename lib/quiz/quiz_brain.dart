@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/quiz/question.dart';
+import 'package:flutter_tutorial/quiz/question.dart';
 
 class QuizBrain {
   int _correctCount = 0;

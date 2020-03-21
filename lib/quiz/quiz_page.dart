@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/quiz/quiz_brain.dart';
+import 'package:flutter_tutorial/quiz/quiz_brain.dart';
 import 'package:platform_alert_dialog/platform_alert_dialog.dart';
 
 class QuizPage extends StatefulWidget {

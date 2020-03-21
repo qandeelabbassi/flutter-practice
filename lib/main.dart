@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/quiz/quiz_page.dart';
-import 'package:flutter_practice/xylophone/xylophone_page.dart';
+import 'package:flutter_tutorial/quiz/quiz_page.dart';
+import 'package:flutter_tutorial/xylophone/xylophone_page.dart';
 import 'dice/dice_game_page.dart';
 import 'profile/profile_page.dart';
 
