@@ -6,7 +6,6 @@
  4) Loading images
  */
 
-
 import 'package:flutter/material.dart';
 import '../styles.dart';
 

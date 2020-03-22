@@ -6,11 +6,9 @@ by Dr. Angela Yu
 
 ## Screenshots:
 
-|                   Profile Page                    |                     Dice Page                      |                   Xylophone Page                    |
+|                      Profile                      |                        Dice                        |                      Xylophone                      |
 |:-------------------------------------------------:|:--------------------------------------------------:|:---------------------------------------------------:|
 | <img src="./screenshots/profile.png" width="250"> | <img src="./screenshots/dicegame.png" width="250"> | <img src="./screenshots/xylophone.png" width="250"> |
-
-|                    Quiz Page                      |
-|:-------------------------------------------------:|
-|  <img src="./screenshots/quiz.png" width="250">   |
+|                       Quiz                        |                      Destini                       |                                                     |
+|  <img src="./screenshots/quiz.png" width="250">   | <img src="./screenshots/destini.png" width="250">  |                                                     |
 

@@ -6,7 +6,14 @@ import 'package:flutter/material.dart';
 
 abstract class Styles {
   static const TextStyle appbar_title_dark = TextStyle(
-    color: Color(0xFF616161)
+    color: Color(0xFF616161),
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle appbar_title_light = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
   );
   static const TextStyle title = TextStyle(
     color: Color.fromRGBO(0, 0, 0, 1),

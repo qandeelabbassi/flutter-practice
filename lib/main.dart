@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/destini/destini_page.dart';
 import 'package:flutter_tutorial/quiz/quiz_page.dart';
 import 'package:flutter_tutorial/xylophone/xylophone_page.dart';
 import 'dice/dice_game_page.dart';
@@ -55,8 +56,16 @@ class Menu extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
+                          MaterialPageRoute(builder: (context) => QuizPage()),
+                        );
+                      }),
+                  RaisedButton(
+                      child: Text('Destini'),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
                           MaterialPageRoute(
-                              builder: (context) => QuizPage()),
+                              builder: (context) => DestiniPage()),
                         );
                       }),
                 ],

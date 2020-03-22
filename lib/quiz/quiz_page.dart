@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/quiz/quiz_brain.dart';
+import 'package:flutter_tutorial/styles.dart';
 import 'package:platform_alert_dialog/platform_alert_dialog.dart';
 
 class QuizPage extends StatefulWidget {
@@ -24,7 +25,8 @@ class _QuizPageState extends State<QuizPage> {
       builder: (BuildContext context) {
         return PlatformAlertDialog(
           title: Text('Finished!'),
-          content: Text('You answered $correctCount of the $totalCount questions correctly!'),
+          content: Text(
+              'You answered $correctCount of the $totalCount questions correctly!'),
           actions: <Widget>[
             PlatformDialogAction(
               child: Text('OK'),
@@ -47,7 +49,7 @@ class _QuizPageState extends State<QuizPage> {
         home: Scaffold(
             appBar: AppBar(
                 backgroundColor: Colors.grey.shade900,
-                title: Text('Quiz'),
+                title: Text('Quiz', style: Styles.appbar_title_light),
                 centerTitle: true,
                 leading: IconButton(
                   icon: Icon(Icons.arrow_back),
@@ -98,6 +100,7 @@ class _QuizPageState extends State<QuizPage> {
                   child: Padding(
                     padding: EdgeInsets.all(15.0),
                     child: FlatButton(
+
                       color: Colors.red,
                       child: Text(
                         'False',
