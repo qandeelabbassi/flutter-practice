@@ -1,75 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/bmi/pages/bmi_calculator_page.dart';
+import 'package:flutter_tutorial/bmi/pages/bmi_result_page.dart';
 import 'package:flutter_tutorial/destini/destini_page.dart';
+import 'package:flutter_tutorial/dice/dice_game_page.dart';
+import 'package:flutter_tutorial/menu.dart';
+import 'package:flutter_tutorial/profile/profile_page.dart';
 import 'package:flutter_tutorial/quiz/quiz_page.dart';
 import 'package:flutter_tutorial/xylophone/xylophone_page.dart';
-import 'dice/dice_game_page.dart';
-import 'profile/profile_page.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Menu(),
-  ));
+  runApp(Main());
 }
 
-class Menu extends StatelessWidget {
+class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.white,
-        body: SafeArea(
-          child: Container(
-              width: double.infinity,
-              color: Colors.white,
-              margin: EdgeInsets.all(25),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  RaisedButton(
-                      child: Text('Profile UI'),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ProfilePage()),
-                        );
-                      }),
-                  RaisedButton(
-                      child: Text('Dice Game'),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => DiceGamePage()),
-                        );
-                      }),
-                  RaisedButton(
-                      child: Text('Xylophone'),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => XylophonePage()),
-                        );
-                      }),
-                  RaisedButton(
-                      child: Text('Quiz'),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => QuizPage()),
-                        );
-                      }),
-                  RaisedButton(
-                      child: Text('Destini'),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => DestiniPage()),
-                        );
-                      }),
-                ],
-              )),
-        ));
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => MenuPage(),
+        'profile': (context) => ProfilePage(),
+        'dice': (context) => DiceGamePage(),
+        'xylophone': (context) => XylophonePage(),
+        'quiz': (context) => QuizPage(),
+        'destini': (context) => DestiniPage(),
+        'bmicalculator': (context) => BmiCalculatorPage(),
+        'bmiresult': (context) => BmiResultPage(),
+      },
+    );
   }
 }

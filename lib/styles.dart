@@ -4,33 +4,106 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
-abstract class Styles {
+class Styles {
+  static const bottomCardMinHeight = 250.0;
+  static const bottomButtonHeightIos = 80.0;
+  static const bottomButtonHeightAndroid = 60.0;
+  static const primaryColor = Color(0xFF090B22);
+  static const accentColor = Color(0xFFEA1455);
+
+  static const sliderActiveColor = Colors.white;
+  static const sliderInactiveColor = Color(0xFF8D8E99);
+
+  static const cardColor = Color(0xFF0F1327);
+  static const activeCardColor = Color(0xFF1C1E33);
+
+  static const roundedButtonColor = Color(0xFF1C1E33);
+
   static const TextStyle appbar_title_dark = TextStyle(
     color: Color(0xFF616161),
     fontSize: 22,
     fontWeight: FontWeight.bold,
   );
+
   static const TextStyle appbar_title_light = TextStyle(
     color: Color(0xFFFFFFFF),
     fontSize: 22,
     fontWeight: FontWeight.bold,
   );
-  static const TextStyle title = TextStyle(
+
+  static const TextStyle profileTitle = TextStyle(
     color: Color.fromRGBO(0, 0, 0, 1),
     fontSize: 25,
     fontFamily: 'Monoton',
     fontStyle: FontStyle.normal,
   );
-  static const TextStyle subTitle = TextStyle(
+
+  static const TextStyle profileSubTitle = TextStyle(
     color: Color.fromRGBO(128, 128, 128, 1),
     fontSize: 20,
     fontFamily: 'SourceSansPro',
     fontStyle: FontStyle.normal,
   );
+
   static const TextStyle content = TextStyle(
-    color: Color.fromRGBO(128, 128, 128, 1),
+    color: Color(0xFF8D8E99),
     fontSize: 18,
     fontFamily: 'SourceSansPro',
     fontStyle: FontStyle.normal,
   );
+
+  static const TextStyle buttonTextStyle = TextStyle(
+    color: Color.fromRGBO(255, 255, 255, 1),
+    fontSize: 20,
+    fontFamily: 'OpenSans',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w500,
+  );
+
+  static const TextStyle cardLabelTextStyle = TextStyle(
+    color: Color(0xFF8D8E99),
+    fontSize: 18,
+    fontFamily: 'OpenSans',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+  );
+
+  static const TextStyle bigTitleTextStyle = TextStyle(
+    fontSize: 40,
+    fontFamily: 'OpenSans',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+  );
+
+  static const TextStyle bigNumberTextStyle = TextStyle(
+    fontSize: 50,
+    fontFamily: 'OpenSans',
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w700,
+  );
+
+  static const TextStyle bigNumberLabelTextStyle = TextStyle(
+    fontSize: 22,
+    fontFamily: 'OpenSans',
+    fontStyle: FontStyle.normal,
+  );
+
+  static ThemeData getCustomDarkTheme(BuildContext context) {
+    return ThemeData.dark().copyWith(
+      primaryColor: primaryColor,
+      accentColor: accentColor,
+      sliderTheme: SliderTheme.of(context).copyWith(
+          activeTrackColor: Styles.sliderActiveColor,
+          inactiveTrackColor: Styles.sliderInactiveColor,
+          thumbColor: Styles.accentColor,
+          overlayColor: Styles.accentColor.withAlpha(50),
+          thumbShape: RoundSliderThumbShape(enabledThumbRadius: 15.0),
+          overlayShape: RoundSliderOverlayShape(overlayRadius: 30.0)),
+      scaffoldBackgroundColor: primaryColor,
+      appBarTheme: AppBarTheme(
+        elevation: 15,
+        textTheme: TextTheme(subtitle1: Styles.appbar_title_dark),
+      ),
+    );
+  }
 }

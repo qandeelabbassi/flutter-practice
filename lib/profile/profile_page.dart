@@ -40,8 +40,8 @@ class ProfilePage extends StatelessWidget {
                 SizedBox(
                   height: 10.0,
                 ),
-                Text('Qandeel Abbassi', style: Styles.title),
-                Text('FLUTTER DEVELOPER', style: Styles.subTitle),
+                Text('Qandeel Abbassi', style: Styles.profileTitle),
+                Text('FLUTTER DEVELOPER', style: Styles.profileSubTitle),
                 SizedBox(
                   height: 20.0,
                 ),
