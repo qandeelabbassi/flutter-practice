@@ -6,9 +6,8 @@ by Dr. Angela Yu
 
 ## Screenshots:
 
-|                      Profile                      |                        Dice                        |                           Xylophone                            |
-|:-------------------------------------------------:|:--------------------------------------------------:|:--------------------------------------------------------------:|
-| <img src="./screenshots/profile.png" width="250"> | <img src="./screenshots/dicegame.png" width="250"> |      <img src="./screenshots/xylophone.png" width="250">       |
-|                       Quiz                        |                      Destini                       |                         BMI Calculator                         |
-|  <img src="./screenshots/quiz.png" width="250">   | <img src="./screenshots/destini.png" width="250">  | <img src="./screenshots/bmi_calculate_iphone.png" width="250"> |
-
+|                      Profile                      |                        Dice                        |                            Xylophone                             |
+|:-------------------------------------------------:|:--------------------------------------------------:|:----------------------------------------------------------------:|
+| <img src="./screenshots/profile.png" width="250"> | <img src="./screenshots/dicegame.png" width="250"> |       <img src="./screenshots/xylophone.png" width="250">        |
+|                       Quiz                        |                      Destini                       |                          BMI Calculator                          |
+|  <img src="./screenshots/quiz.png" width="250">   | <img src="./screenshots/destini.png" width="250">  | <img src="./screenshots/bmi_calculator_android.png" width="250"> |
