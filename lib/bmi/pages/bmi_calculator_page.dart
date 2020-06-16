@@ -18,8 +18,8 @@ class BmiCalculatorPage extends StatefulWidget {
 class _BmiCalculatorPageState extends State<BmiCalculatorPage> {
   Gender gender = Gender.MALE;
   int height = 180; // in cm
-  int weight = 70; // in Kg
-  int age = 20; // in years
+  int weight = 5; // in Kg
+  int age = 5; // in years
 
   updateGenderCardState(Gender gdr) {
     setState(() {
@@ -29,18 +29,18 @@ class _BmiCalculatorPageState extends State<BmiCalculatorPage> {
 
   updateWeight(int change) {
     setState(() {
-      if (change < -1 && weight - change >= 0)
-        weight = weight - change;
-      else
+      if (change < 0 && weight + change >= 0)
+        weight = weight + change;
+      else if (change > 0)
         weight = weight + change;
     });
   }
 
   updateAge(int change) {
     setState(() {
-      if (change < -1 && age - change >= 0)
-        age = age - change;
-      else
+      if (change < 0 && age + change >= 0)
+        age = age + change;
+      else if (change > 0)
         age = age + change;
     });
   }
@@ -185,7 +185,7 @@ class _BmiCalculatorPageState extends State<BmiCalculatorPage> {
                 ]),
           ))),
           FooterButton(
-              onTapCallback: () => Navigator.pushNamed(context, 'bmiresult',
+              onTapCallback: () => Navigator.pushNamed(context, 'bmi_result',
                   arguments: CalculatorBrain(height: height, weight: weight)),
               buttonTitle: 'CALCULATE BMI')
         ]),

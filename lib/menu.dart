@@ -41,7 +41,17 @@ class MenuPage extends StatelessWidget {
                   RaisedButton(
                       child: Text('BMI Calculator'),
                       onPressed: () {
-                        Navigator.pushNamed(context, 'bmicalculator');
+                        Navigator.pushNamed(context, 'bmi_calculator');
+                      }),
+                  RaisedButton(
+                      child: Text('Clima'),
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'clima_loading_screen');
+                      }),
+                  RaisedButton(
+                      child: Text('Bitcoin Ticker'),
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'ticker_price_screen');
                       }),
                 ],
               )),

@@ -88,6 +88,35 @@ class Styles {
     fontStyle: FontStyle.normal,
   );
 
+  static const TextStyle bigSearchTextStyle = TextStyle(
+      fontSize: 20,
+      fontFamily: 'OpenSans',
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w700,
+      color: Colors.black87);
+
+  static const BorderSide roundedButtonSide =
+      BorderSide(color: Colors.white, width: 2.0, style: BorderStyle.solid);
+
+  static RoundedRectangleBorder borderButtonShape =
+      RoundedRectangleBorder(borderRadius: new BorderRadius.circular(10.0));
+
+  static const InputDecoration searchBarDecoration = InputDecoration(
+    filled: true,
+    fillColor: Colors.white,
+    contentPadding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0, bottom: 15.0),
+    hintText: 'Enter Location Name',
+    hintStyle: TextStyle(
+      color: Colors.grey,
+    ),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.all(
+        Radius.circular(10.0),
+      ),
+      borderSide: BorderSide.none,
+    ),
+  );
+
   static ThemeData getCustomDarkTheme(BuildContext context) {
     return ThemeData.dark().copyWith(
       primaryColor: primaryColor,
