@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "121088879547",
+    "firebase_url": "https://flash-chat-a497b.firebaseio.com",
+    "project_id": "flash-chat-a497b",
+    "storage_bucket": "flash-chat-a497b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121088879547:android:9e3132963698b54e47729e",
+        "android_client_info": {
+          "package_name": "com.qandeelabbassi.fluttertutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121088879547-ivmgmqmmgv1ufjmseg97dg4obe02mb30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.qandeelabbassi.fluttertutorial",
+            "certificate_hash": "97ebd36d7dd461d49a48f51cb67e8fe10732a279"
+          }
+        },
+        {
+          "client_id": "121088879547-v3ftevucv5h8bvbu5rc3ve0o2f2p6st3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfRViKl7d8iEZhDtQgMgnyb2kA6Ao80eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121088879547-v3ftevucv5h8bvbu5rc3ve0o2f2p6st3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

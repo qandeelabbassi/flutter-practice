@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/chat/pages/chat_main.dart';
+import 'package:flutter_tutorial/chat/pages/welcome_screen.dart';
 
 class MenuPage extends StatelessWidget {
   @override
@@ -52,6 +54,11 @@ class MenuPage extends StatelessWidget {
                       child: Text('Bitcoin Ticker'),
                       onPressed: () {
                         Navigator.pushNamed(context, 'ticker_price_screen');
+                      }),
+                  RaisedButton(
+                      child: Text('Flash Chat'),
+                      onPressed: () {
+                        Navigator.pushNamed(context, ChatMain.id);
                       }),
                 ],
               )),

@@ -70,9 +70,9 @@ class Styles {
 
   static const TextStyle bigTitleTextStyle = TextStyle(
     fontSize: 40,
-    fontFamily: 'OpenSans',
+    fontFamily: 'Spartan MB',
     fontStyle: FontStyle.normal,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w900,
   );
 
   static const TextStyle bigNumberTextStyle = TextStyle(
@@ -104,7 +104,8 @@ class Styles {
   static const InputDecoration searchBarDecoration = InputDecoration(
     filled: true,
     fillColor: Colors.white,
-    contentPadding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0, bottom: 15.0),
+    contentPadding:
+        EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0, bottom: 15.0),
     hintText: 'Enter Location Name',
     hintStyle: TextStyle(
       color: Colors.grey,
@@ -114,6 +115,40 @@ class Styles {
         Radius.circular(10.0),
       ),
       borderSide: BorderSide.none,
+    ),
+  );
+
+  static const kSendButtonTextStyle = TextStyle(
+    color: Colors.lightBlueAccent,
+    fontWeight: FontWeight.bold,
+    fontSize: 18.0,
+  );
+
+  static const kMessageTextFieldDecoration = InputDecoration(
+    contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+    hintText: 'Type your message here...',
+    border: InputBorder.none,
+  );
+
+  static const kMessageContainerDecoration = BoxDecoration(
+    border: Border(
+      top: BorderSide(color: Colors.lightBlueAccent, width: 2.0),
+    ),
+  );
+
+  static const kInputFieldDecoration = InputDecoration(
+    hintText: '',
+    contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.all(Radius.circular(32.0)),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.blueAccent, width: 1.0),
+      borderRadius: BorderRadius.all(Radius.circular(32.0)),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
+      borderRadius: BorderRadius.all(Radius.circular(32.0)),
     ),
   );
 
@@ -134,5 +169,9 @@ class Styles {
         textTheme: TextTheme(subtitle1: Styles.appbar_title_dark),
       ),
     );
+  }
+
+  static ThemeData getCustomLightTheme(BuildContext context) {
+    return ThemeData.light();
   }
 }
